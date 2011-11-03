@@ -1,3 +1,9 @@
+# revision 23484
+# category Package
+# catalog-ctan /usergrps/dante/dtk
+# catalog-date 2011-08-06 19:26:43 +0200
+# catalog-license lppl1.3
+# catalog-version 1.26
 Name:		texlive-dtk
 Version:	1.26
 Release:	1
@@ -78,6 +84,7 @@ produce the complete journal.
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/rueckenNeu.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/stammtische.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/termine.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -88,3 +95,5 @@ produce the complete journal.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex makeindex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
