@@ -1,11 +1,11 @@
-# revision 23484
+# revision 24698
 # category Package
 # catalog-ctan /usergrps/dante/dtk
-# catalog-date 2011-08-06 19:26:43 +0200
+# catalog-date 2011-11-29 08:42:57 +0100
 # catalog-license lppl1.3
-# catalog-version 1.26
+# catalog-version 1.27
 Name:		texlive-dtk
-Version:	1.26
+Version:	1.27
 Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The bundle provides a class and style file for typesetting "Die
@@ -28,19 +26,19 @@ by article writers to typeset a single article as well as to
 produce the complete journal.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -49,6 +47,7 @@ produce the complete journal.
 %{_texmfdistdir}/makeindex/dtk/dtk-adr.ist
 %{_texmfdistdir}/makeindex/dtk/dtk-idx.ist
 %{_texmfdistdir}/tex/latex/dtk/dtk-pdf.sty
+%{_texmfdistdir}/tex/latex/dtk/dtk-url.sty
 %{_texmfdistdir}/tex/latex/dtk/dtk.clo
 %{_texmfdistdir}/tex/latex/dtk/dtk.cls
 %{_texmfdistdir}/tex/latex/dtk/dtk11.clo
