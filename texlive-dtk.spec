@@ -25,16 +25,8 @@ Users Group DANTE e.V. This means that this class can be used
 by article writers to typeset a single article as well as to
 produce the complete journal.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -84,7 +76,6 @@ produce the complete journal.
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/rueckenNeu.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/stammtische.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/termine.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -95,5 +86,3 @@ produce the complete journal.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex makeindex tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
