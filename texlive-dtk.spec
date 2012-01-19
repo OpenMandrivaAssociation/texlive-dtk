@@ -1,4 +1,4 @@
-# revision 24698
+# revision 24963
 # category Package
 # catalog-ctan /usergrps/dante/dtk
 # catalog-date 2011-11-29 08:42:57 +0100
@@ -6,7 +6,7 @@
 # catalog-version 1.27
 Name:		texlive-dtk
 Version:	1.27
-Release:	2
+Release:	3
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
@@ -42,7 +42,7 @@ produce the complete journal.
 %{_texmfdistdir}/tex/latex/dtk/dtk-url.sty
 %{_texmfdistdir}/tex/latex/dtk/dtk.clo
 %{_texmfdistdir}/tex/latex/dtk/dtk.cls
-%{_texmfdistdir}/tex/latex/dtk/dtk11.clo
+%{_texmfdistdir}/tex/latex/dtk/dtk12.clo
 %{_texmfdistdir}/tex/latex/dtk/dtklogos.sty
 %doc %{_texmfdistdir}/doc/latex/dtk/Changes
 %doc %{_texmfdistdir}/doc/latex/dtk/doc/beispiel-lua.pdf
@@ -59,6 +59,7 @@ produce the complete journal.
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk05.clo
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk06.clo
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk10.clo
+%doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk11.clo
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk95.clo
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk96.clo
 %doc %{_texmfdistdir}/doc/latex/dtk/historical/dtk97.clo
