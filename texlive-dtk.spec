@@ -1,4 +1,4 @@
-# revision 25476
+# revision 25909
 # category Package
 # catalog-ctan /usergrps/dante/dtk
 # catalog-date 2012-02-22 01:03:15 +0100
@@ -6,7 +6,7 @@
 # catalog-version 1.28
 Name:		texlive-dtk
 Version:	1.28
-Release:	1
+Release:	2
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
