@@ -1,19 +1,18 @@
-# revision 25909
+# revision 27226
 # category Package
 # catalog-ctan /usergrps/dante/dtk
-# catalog-date 2012-02-22 01:03:15 +0100
+# catalog-date 2012-06-18 14:12:50 +0200
 # catalog-license lppl1.3
-# catalog-version 1.28
+# catalog-version 1.29
 Name:		texlive-dtk
-Version:	1.28
-Release:	2
+Version:	1.29
+Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -22,9 +21,9 @@ Requires(post):	texlive-kpathsea
 %description
 The bundle provides a class and style file for typesetting "Die
 TeXnische Komodie" -- the communications of the German TeX
-Users Group DANTE e.V. This means that this class can be used
-by article writers to typeset a single article as well as to
-produce the complete journal.
+Users Group DANTE e.V. The arrangement means that the class may
+be used by article writers to typeset a single article as well
+as to produce the complete journal.
 
 %post
     %{_sbindir}/texlive.post
@@ -78,16 +77,13 @@ produce the complete journal.
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/rueckenNeu.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/stammtische.tex
 %doc %{_texmfdistdir}/doc/latex/dtk/komoedie/termine.tex
-#- source
-%doc %{_texmfdistdir}/source/latex/dtk/dtk.dtx
-%doc %{_texmfdistdir}/source/latex/dtk/dtk.ins
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a0 -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar bibtex makeindex tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar bibtex makeindex tex doc %{buildroot}%{_texmfdistdir}
