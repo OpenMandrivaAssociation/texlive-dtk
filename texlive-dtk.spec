@@ -1,4 +1,4 @@
-# revision 27443
+# revision 27226
 # category Package
 # catalog-ctan /usergrps/dante/dtk
 # catalog-date 2012-06-18 14:12:50 +0200
@@ -6,7 +6,7 @@
 # catalog-version 1.29
 Name:		texlive-dtk
 Version:	1.29
-Release:	2
+Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
@@ -87,3 +87,37 @@ as to produce the complete journal.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex makeindex tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.29-1
++ Revision: 812226
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.28-2
++ Revision: 790561
+- Update to latest release.
+
+* Fri Feb 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.28-1
++ Revision: 780562
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.27-3
++ Revision: 762598
+- Update to latest upstream package
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.27-2
++ Revision: 751096
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.27-1
++ Revision: 739742
+- texlive-dtk
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.26-1
++ Revision: 718266
+- texlive-dtk
+- texlive-dtk
+- texlive-dtk
+- texlive-dtk
+
