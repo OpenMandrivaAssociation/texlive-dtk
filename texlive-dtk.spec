@@ -1,12 +1,12 @@
 Name:		texlive-dtk
-Version:	2.08a
+Version:	63179
 Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ be used by article writers to typeset a single article as well
 as to produce the complete journal.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -34,7 +34,7 @@ as to produce the complete journal.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
