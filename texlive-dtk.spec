@@ -1,6 +1,6 @@
 Name:		texlive-dtk
-Version:	65315
-Release:	2
+Version:	67781
+Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
