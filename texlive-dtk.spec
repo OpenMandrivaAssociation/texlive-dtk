@@ -1,5 +1,5 @@
 Name:		texlive-dtk
-Version:	68849
+Version:	69504
 Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
