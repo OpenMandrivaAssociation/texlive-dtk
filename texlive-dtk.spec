@@ -3,7 +3,7 @@ Version:	71776
 Release:	1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/usergrps/dante/dtk
+URL:		https://www.ctan.org/tex-archive/usergrps/dante/dtk
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dtk.doc.r%{version}.tar.xz
