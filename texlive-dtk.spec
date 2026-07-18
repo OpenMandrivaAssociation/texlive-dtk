@@ -1,9 +1,9 @@
 %global tl_name dtk
-%global tl_revision 71776
+%global tl_revision 79668
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	2.10f
+Version:	2.10g
 Release:	%{tl_revision}.1
 Summary:	Document class for the journal of DANTE
 Group:		Publishing
